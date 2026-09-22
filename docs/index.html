@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ChupaTuring2000</title>
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: #0c0d10; color: #d7d4c8; line-height: 1.55;
+    }
+    main { max-width: 72ch; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+    h1 { font-size: 1.6rem; letter-spacing: 0.04em; color: #f2ead3; }
+    h2 { font-size: 1.05rem; margin-top: 2.2rem; color: #f2ead3; }
+    a { color: #e2b14a; }
+    .tag {
+      display: inline-block; border: 1px solid #e2b14a; color: #e2b14a;
+      padding: 0.15rem 0.5rem; font-size: 0.75rem; letter-spacing: 0.08em;
+      text-transform: uppercase; margin-bottom: 1rem;
+    }
+    pre {
+      background: #16171c; padding: 1rem; overflow-x: auto;
+      border: 1px solid #2a2c33;
+    }
+    .warn {
+      border-left: 3px solid #e2b14a; padding: 0.2rem 0 0.2rem 1rem;
+      color: #f2ead3;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="tag">vibecoded · didático · não operacional</div>
+  <h1>ChupaTuring2000</h1>
+  <p>
+    Toolkit em Python para gerar um caderno de permutações A–Z e
+    cifrar/decifrar letra a letra, uma linha do pad por posição da mensagem.
+  </p>
+  <p class="warn">
+    Este projeto foi <strong>vibecoded</strong> (conversa com Grok + script).
+    Não é um produto de criptografia. Não esconda nada que doa perder.
+  </p>
+  <h2>Repo</h2>
+  <p><a href="https://github.com/casc1701/ChupaTuring2000">github.com/casc1701/ChupaTuring2000</a></p>
+  <ul>
+    <li><a href="https://github.com/casc1701/ChupaTuring2000/blob/main/docs/VIBECODED.md">Aviso de vibecode</a></li>
+    <li><a href="https://github.com/casc1701/ChupaTuring2000/blob/main/docs/COMO-FUNCIONA.md">Como funciona</a></li>
+    <li><a href="https://github.com/casc1701/ChupaTuring2000/blob/main/SECURITY.md">Segurança</a></li>
+  </ul>
+  <h2>Três comandos</h2>
+<pre>python otp_toolkit.py gen -n 50 --groups -o pad.txt
+python otp_toolkit.py enc -p pad.txt -m msg.txt -o cifra.txt
+python otp_toolkit.py dec -p pad.txt -m cifra.txt</pre>
+  <h2>O nome</h2>
+  <p>
+    Turing comeu estrutura. Um pad sem estrutura, usado uma vez, não tem gosto.
+    Shannon (1949) que formalizou o “porquê”. O resto é piada e papel.
+  </p>
+</main>
+</body>
+</html>
