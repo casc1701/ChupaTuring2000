@@ -1,0 +1,14 @@
+[project]
+name = "chupaturing2000"
+version = "0.1.0"
+description = "Toolkit didático de cifra posicional com permutações A-Z. Vibecoded."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "casc1701" }]
+
+[project.scripts]
+chupaturing = "otp_toolkit:main"
+
+[tool.setuptools]
+py-modules = ["otp_toolkit"]

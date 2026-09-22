@@ -1,0 +1,23 @@
+name: Bug
+description: Algo quebrou no gen/enc/dec
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não anexe pads reais. Invente um pad de 5 linhas para o relato.
+        Este projeto foi vibecoded; descreva o comando.
+  - type: textarea
+    id: cmd
+    attributes:
+      label: Comando
+      description: Cole o comando exato.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Esperado vs obtido
+    validations:
+      required: true
